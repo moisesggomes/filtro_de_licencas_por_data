@@ -45,17 +45,6 @@ def date_is_valid(init_date_str, end_date_str, limit_dates):
 
 def date_is_between(dates, limit_dates):
     return not (dates[1] < limit_dates[0] or dates[0] > limit_dates[1])
-    # if dates[1] < limit_dates[0]:
-    #     return False
-    # elif dates[0] < limit_dates[0] and dates[1] >= limit_dates[0]:
-    #     return True
-    # elif dates[0] >= limit_dates[0] and dates[1] <= limit_dates[1]:
-    #     return True
-    # elif dates[0] <= limit_dates[1] and dates[1] >= limit_dates[1]:
-    #     return True
-    # else:
-    #     return False
-
 
 def show_valid_names():
     for person in valid_names:
